@@ -10,25 +10,56 @@
 </head>
 
 <body>
-
-  <input id="color" type="color"> 
-
   <main class="container">
-    <h1 class="container__title">Calcule seu IMC</h1>
-    <form class="container__input">
-
-      <label class="input__title"  for="">Peso:</label>
-      <input required class="input__peso" placeholder="Peso em Kg" type="number">
-
-      <label class="input__title"  for="">Altura:</label>
-      <input required class="input__altura" placeholder="Altura em Metros" type="number">
-
-      <button type="submit" class="input__button">Calcular</button>
-    </form>
-    <div class="resultado">
-      <div class="resultado__imc">
+    <div class="container__info">
+      <h1 class="container__title">Calcule seu IMC</h1>
+      <div class="container__info__table">
+        <table>
+          <thead>
+            <tr>
+              <th>IMC</th>
+              <th>Classificação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Abaixo de 18 </td>
+              <td>Abaixo do peso</td>
+            </tr>
+            <tr>
+              <td>18 - 24</td>
+              <td>Peso normal</td>
+            </tr>
+            <tr>
+              <td>25 - 29</td>
+              <td>Sobrepeso</td>
+            </tr>
+            <tr>
+              <td>30 - 34</td>
+              <td>Obesidade leve</td>
+            </tr>
+            <tr>
+              <td>35 - 39</td>
+              <td>Obesidade moderada</td>
+            </tr>
+            <tr>
+              <td>40 ou mais</td>
+              <td>Obesidade grave</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
+    <form class="container__input">
+      <input required class="input__peso" placeholder="Peso (Kg)" type="number">
+      <input required class="input__altura" placeholder="Altura (m)" type="number">
+      <button type="submit" class="input__button">Calcular</button>
+      <div class="resultado__imc"></div>
+    </form>
+
+    <aside>
+
+    </aside>
   </main>
   <script src="js/index.js"></script>
 </body>
