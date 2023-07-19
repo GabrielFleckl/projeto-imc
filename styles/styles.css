@@ -38,9 +38,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-self: start;
   align-items: center;
   gap: 16px;
   width: 245px;
+  padding-top: 8px;
 }
 
 .container__title{
@@ -106,7 +108,6 @@ th {
   font-size: 1.5em;
   color: #f1f1f1;
   background-color: #111;
-  padding: 15px;
-  border-radius: 50%;
-
+  padding: 20px;
+  border-radius: 16px;
 }
