@@ -15,7 +15,7 @@ function calcularIMC() {
   const alturaEmCM = altura.value / 100
   const imc = Math.floor(peso.value / (alturaEmCM * alturaEmCM))
   if (isNaN(imc)) {
-    alert('Todos os campos devem ser preenchidos.')
+    alert('Todos os campos devem ser preenchidos corretamente.')
   } else {
     resultado.innerHTML = `<p class="result">${imc}</p>`
   }
