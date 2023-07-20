@@ -20,8 +20,6 @@ function calcularIMC() {
     resultado.innerHTML = `
     <p class="result__text">Seu resultado:</p>
     <p class="result">${imc}</p>
-    <br>
-    <hr>
     `
   }
 
