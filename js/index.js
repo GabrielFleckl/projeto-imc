@@ -17,7 +17,12 @@ function calcularIMC() {
   if (isNaN(imc)) {
     alert('Todos os campos devem ser preenchidos corretamente.')
   } else {
-    resultado.innerHTML = `<p class="result">${imc}</p>`
+    resultado.innerHTML = `
+    <p class="result__text">Seu resultado:</p>
+    <p class="result">${imc}</p>
+    <br>
+    <hr>
+    `
   }
 
 }
