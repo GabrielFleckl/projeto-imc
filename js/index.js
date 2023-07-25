@@ -13,16 +13,15 @@ btnIMC.addEventListener('click', (event) => {
 
 function calcularIMC() {
   const alturaEmCM = altura.value / 100
-  const imc = Math.floor(peso.value / (alturaEmCM * alturaEmCM))
+  const imc = peso.value / alturaEmCM ** 2
   if (isNaN(imc)) {
     alert('Todos os campos devem ser preenchidos corretamente.')
   } else {
     resultado.innerHTML = `
     <p class="result__text">Seu resultado:</p>
-    <p class="result">${imc}</p>
+    <p class="result">${imc.toFixed(2)}</p>
     `
   }
-
 }
 
 
