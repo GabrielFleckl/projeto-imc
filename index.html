@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="styles/style.css">
   <title>Calcule seu IMC</title>
 </head>
 
@@ -53,8 +53,8 @@
       </div>
     </div>
     <form class="container__input">
-      <input required class="input__peso" placeholder="Peso (Kg)" type="number">
-      <input required class="input__altura" placeholder="Altura (m)" type="number">
+      <input required id="peso" class="input" placeholder="Peso (Kg)" type="number">
+      <input required id="altura" class="input" placeholder="Altura (m)" type="number">
       <button type="submit" class="input__button">Calcular</button>
       <div class="resultado__imc"></div>
     </form>

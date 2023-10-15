@@ -1,6 +1,6 @@
 const container = document.querySelector('.container')
-const peso = container.querySelector('.input__peso')
-const altura = container.querySelector('.input__altura')
+const peso = container.querySelector('#peso')
+const altura = container.querySelector('#altura')
 const btnIMC = container.querySelector('.input__button')
 const resultado = container.querySelector('.resultado__imc')
 
@@ -14,12 +14,12 @@ btnIMC.addEventListener('click', (event) => {
 function calcularIMC() {
   const alturaEmCM = altura.value / 100
   const imc = peso.value / alturaEmCM ** 2
-  if (isNaN(imc)) {
+  if (isNaN(imc) || imc > 60) {
     alert('Todos os campos devem ser preenchidos corretamente.')
   } else {
     resultado.innerHTML = `
     <p class="result__text">Seu resultado:</p>
-    <p class="result">${imc.toFixed(2)}</p>
+    <p class="result">${imc.toFixed(0)}</p>
     `
   }
 }

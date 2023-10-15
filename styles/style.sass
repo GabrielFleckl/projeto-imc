@@ -1,0 +1,125 @@
+* 
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+
+body 
+  background-color: #111111
+  min-height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  gap: 16px
+  font-family: sans-serif
+
+
+.container 
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: row-reverse
+  gap: 16px
+  background-color: #f1f1f1
+  border-radius: 8px
+  padding: 16px
+  box-shadow: 0px 0px 15px 5px #f1f1f1
+
+
+.container__info 
+  display: flex
+  flex-direction: column
+  gap: 8px
+
+
+.container__input 
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-self: start
+  align-items: center
+  gap: 16px
+  width: 245px
+  padding-top: 8px
+
+.container__title 
+  text-align: center
+  color: #f1f1f1
+  text-shadow: 0px 3px 10px #f1f1f1
+
+
+td 
+  text-align: center
+  padding: 8px
+  border-bottom: 1px solid #111
+
+
+th 
+  background-color: #111
+  color: #f1f1f1
+  padding: 8px
+
+
+.img 
+  width: 100%
+  height: 150px
+
+
+.input
+  border: none
+  outline: none
+  padding: 8px
+  background-color: transparent
+  border-bottom: 1px solid #111
+  transition: .3s ease-in all
+  font-weight: 600
+
+
+.input:focus
+  border-bottom: 1px solid #DCDCDC
+  transition: .3s ease-in all
+
+
+.input__button 
+  margin-top: 16px
+  margin-bottom: 8px
+  padding: 5% 25%
+  border: none
+  background-color: #222
+  border-radius: 8px
+  color: #f1f1f1
+  box-shadow: 0px 5px 8px 1px #111
+  cursor: pointer
+  transition: linear .3s
+
+
+.input__button:hover 
+  transition: all .3s
+  background-color: #111
+
+
+.result 
+  font-weight: bold
+  font-size: 1.5em
+  color: #f1f1f1
+  background-color: #111
+  padding: 20px
+  border-radius: 16px
+  text-align: cente
+
+.result__text
+  font-weight: bold
+  font-size: 1.5em
+  color: #111
+  margin-bottom: 8px
+
+
+
+@media (max-width: 660px) 
+  .container 
+    flex-direction: column-reverse
+  
+  .container__input
+    align-self: center
+  
