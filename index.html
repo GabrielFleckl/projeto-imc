@@ -5,17 +5,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css">
   <title>Calcule seu IMC</title>
 </head>
 
 <body>
-  <header>
-    <h1 class="container__title">Calcule seu IMC</h1>
-  </header>
+
   <main class="container">
     <div class="container__info">
-      <div class="container__info__table">
+      <!-- <div class="container__info__table">
         <table>
           <thead>
             <tr>
@@ -50,15 +51,22 @@
             </tr>
           </tbody>
         </table>
-      </div>
+      </div> -->
     </div>
     <form class="container__input">
+      <header>
+        <abbr title="O índice de massa corporal é uma medida internacional usada para calcular se uma pessoa está no peso ideal.">
+          <p class="container__title">Calcule seu IMC</p>
+        </abbr>
+      </header>
       <input required id="peso" class="input" placeholder="Peso (Kg)" type="number">
-      <input required id="altura" class="input" placeholder="Altura (m)" type="number">
+      <input required id="altura" class="input" placeholder="Altura (cm)" type="number">
       <button type="submit" class="input__button">Calcular</button>
+      <p class="info-text">Informe seus dados e veja em qual faixa você esta!</p>
       <div class="resultado__imc"></div>
     </form>
   </main>
+  <img class="img-imc" src="public/img/image.svg" alt="">
   <script src="../js/index.js"></script>
 </body>
 

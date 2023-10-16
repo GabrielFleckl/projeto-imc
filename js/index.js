@@ -18,7 +18,7 @@ function calcularIMC() {
     alert('Todos os campos devem ser preenchidos corretamente.')
   } else {
     resultado.innerHTML = `
-    <p class="result__text">Seu resultado:</p>
+    <p class="result__text">Seu resultado é:</p>
     <p class="result">${imc.toFixed(0)}</p>
     `
   }

@@ -1,3 +1,9 @@
+// Colors
+$accent: #9EEFC3
+$primary:#f9f9f9
+$secondary: #353535
+$hover: #8fdab1
+  
 * 
   margin: 0
   padding: 0
@@ -5,121 +11,119 @@
 
 
 body 
-  background-color: #111111
+  background-color: $primary
   min-height: 100vh
   display: flex
   justify-content: center
   align-items: center
-  flex-direction: column
-  gap: 16px
+  flex-direction: row-reverse
+  gap: 5em
   font-family: sans-serif
+  font-family: 'Inter', sans-serif
 
+abbr
+  color: transparent
+  cursor: pointer
+
+.img-imc
+  height: 425px
+  object-fit: cover
+  object-position: center
 
 .container 
   display: flex
   justify-content: center
-  align-items: center
-  flex-direction: row-reverse
-  gap: 16px
-  background-color: #f1f1f1
+  align-items: start
+  background-color: $secondary
   border-radius: 8px
-  padding: 16px
-  box-shadow: 0px 0px 15px 5px #f1f1f1
-
-
-.container__info 
-  display: flex
-  flex-direction: column
-  gap: 8px
-
+  padding: 32px
+  height: 100%
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px
+  .info-text
+    color: $accent
+    font-size: 1em
+    font-weight: 700
+    text-align: center
+  
 
 .container__input 
   display: flex
   flex-direction: column
   justify-content: center
-  align-self: start
-  align-items: center
+  
   gap: 16px
   width: 245px
   padding-top: 8px
 
 .container__title 
-  text-align: center
-  color: #f1f1f1
-  text-shadow: 0px 3px 10px #f1f1f1
-
-
-td 
-  text-align: center
-  padding: 8px
-  border-bottom: 1px solid #111
-
-
-th 
-  background-color: #111
-  color: #f1f1f1
-  padding: 8px
-
-
-.img 
-  width: 100%
-  height: 150px
-
-
+  color: $primary
+  font-size: 1.5em
+  font-weight: 600
+  
 .input
   border: none
   outline: none
-  padding: 8px
+  padding: 16px
   background-color: transparent
-  border-bottom: 1px solid #111
-  transition: .3s ease-in all
+  border-bottom: 1px solid $accent
+  transition: .3s ease-out
   font-weight: 600
+  color: $primary
 
+  &::placeholder
+    color: $primary
 
-.input:focus
-  border-bottom: 1px solid #DCDCDC
-  transition: .3s ease-in all
+  &:focus
+    transition: .1s ease
+    outline: 2px solid $accent
+    border-bottom: 1px solid transparent
+    border-radius: 8px
 
 
 .input__button 
-  margin-top: 16px
-  margin-bottom: 8px
-  padding: 5% 25%
+  margin: 16px 0px 8px 0px
+  padding: 4% 25%
   border: none
-  background-color: #222
-  border-radius: 8px
-  color: #f1f1f1
-  box-shadow: 0px 5px 8px 1px #111
+  background-color: $accent
+  border-radius: 32px
+  color: $secondary
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px
   cursor: pointer
-  transition: linear .3s
+  transition: linear .2s
+  font-size: 1.1em
+  font-weight: 600
 
 
 .input__button:hover 
   transition: all .3s
-  background-color: #111
+  background-color: $hover
 
 
 .result 
   font-weight: bold
   font-size: 1.5em
-  color: #f1f1f1
-  background-color: #111
+  color: $secondary
+  background-color: $accent
   padding: 20px
   border-radius: 16px
-  text-align: cente
+  text-align: center
 
 .result__text
   font-weight: bold
   font-size: 1.5em
-  color: #111
-  margin-bottom: 8px
-
-
+  color: $primary
+  margin-bottom: 16px
+  padding-top: 16px
+  border-top: 3px solid $hover
 
 @media (max-width: 660px) 
-  .container 
-    flex-direction: column-reverse
+  body
+    gap: 0
   
   .container__input
     align-self: center
-  
+
+@media (max-width: 843px) 
+
+  .img-imc
+    display: none
