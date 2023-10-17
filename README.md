@@ -36,12 +36,25 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ![image](https://img.shields.io/badge/HTML-orangered?style=for-the-badge&logo=html5&logoColor=white)<br>
 ![image](https://img.shields.io/badge/CSS-blue?&style=for-the-badge&logo=css3&logoColor=white)<br>
-![image](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)<br>
+![image](https://camo.githubusercontent.com/8849f369ac031cc842a4ab4248c7f7db6a4b593cad1f2d1c01d3aeb6f0f8dca7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f536173732d4343363639393f7374796c653d666f722d7468652d6261646765266c6f676f3d73617373266c6f676f436f6c6f723d7768697465)<br>
+![image](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 
 
 ## 💻 Projeto
 
-Web aplicativo criado com as tecnologias <strong> HTML, CSS, JavaScript</strong>. Isso garantindo uma experiência de usuário simplificada e <strong>responsiva</strong>, que se adapta a todos os dispositivos, <strong>desde desktops até smartphones</strong>.
+Calculadora de IMC, ferramenta que ajuda a avaliar se uma pessoa está dentro de faixas consideradas saudáveis de peso em relação à sua altura. O IMC é amplamente utilizado na área de saúde e tem várias finalidades como:
+
+• Avaliação de Peso
+
+• Rastreamento de Saúde
+
+• Identificação de Riscos à Saúde
+
+• Orientação para Perda de Peso ou Ganho de Peso
+
+• Triagem em Populações
+
+Criado com as tecnologias <strong> HTML, CSS, SASS e JavaScript</strong>. Isso garantindo uma experiência de usuário simplificada e <strong>responsiva</strong>, que se adapta a todos os dispositivos, <strong>desde desktops até smartphones</strong>.
 
 ## 📝 Licença
 
