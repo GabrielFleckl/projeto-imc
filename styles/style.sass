@@ -1,16 +1,24 @@
-// Colors
-$accent: #9EEFC3
-$primary:#f9f9f9
+// Pallete 1
+$accent: #95E06C
+$primary: #f2f2f2
 $secondary: #353535
-$hover: #8fdab1
-  
-* 
+$tertiary: #191919
+$hover: #8acf64
+// Pallete 2
+$color1: #050505
+$color2: #AFD5AA
+$color3: #F0F2EF
+// Pallete 3
+$color4: #121619
+$color5: #C3F73A
+$color6: #95E06C
+
+*
   margin: 0
   padding: 0
   box-sizing: border-box
 
-
-body 
+body
   background-color: $primary
   min-height: 100vh
   display: flex
@@ -18,19 +26,20 @@ body
   align-items: center
   flex-direction: row-reverse
   gap: 5em
-  font-family: sans-serif
   font-family: 'Inter', sans-serif
+  padding: 32px
 
 abbr
   color: transparent
   cursor: pointer
 
 .img-imc
-  height: 425px
+  max-width: 45%
+  height: auto
   object-fit: cover
   object-position: center
 
-.container 
+.container
   display: flex
   justify-content: center
   align-items: start
@@ -41,65 +50,57 @@ abbr
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px
   .info-text
     color: $accent
-    font-size: 1em
+    font-size: .9em
     font-weight: 700
     text-align: center
-  
 
-.container__input 
-  display: flex
-  flex-direction: column
-  justify-content: center
-  
-  gap: 16px
-  width: 245px
-  padding-top: 8px
+  .container__input
+    display: flex
+    flex-direction: column
+    justify-content: center
+    gap: 16px
+    width: 245px
+    padding-top: 8px
 
-.container__title 
-  color: $primary
-  font-size: 1.5em
-  font-weight: 600
-  
-.input
-  border: none
-  outline: none
-  padding: 16px
-  background-color: transparent
-  border-bottom: 1px solid $accent
-  transition: .3s ease-out
-  font-weight: 600
-  color: $primary
+  .container__title
+    color: $primary
+    font-size: 1.5em
+    font-weight: 600
 
-  &::placeholder
+  .input
+    border: none
+    outline: none
+    padding: 16px
+    background-color: $tertiary
+    border-radius: 8px
+    transition: .2s ease-out
+    font-weight: 600
     color: $primary
 
-  &:focus
-    transition: .1s ease
-    outline: 2px solid $accent
-    border-bottom: 1px solid transparent
-    border-radius: 8px
+    &::placeholder
+      color: $primary
+      
+    &:focus
+      transition: .1s ease
+      outline: 1px solid $accent
 
+  .input__button
+    margin: 8px 0px 8px 0px
+    padding: 4% 25%
+    border: none
+    background-color: $accent
+    border-radius: 32px
+    color: $secondary
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px
+    cursor: pointer
+    transition: linear .2s
+    font-size: 1.1em
+    font-weight: 600
+    &:hover
+      transition: all .3s
+      background-color: $hover
 
-.input__button 
-  margin: 16px 0px 8px 0px
-  padding: 4% 25%
-  border: none
-  background-color: $accent
-  border-radius: 32px
-  color: $secondary
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px
-  cursor: pointer
-  transition: linear .2s
-  font-size: 1.1em
-  font-weight: 600
-
-
-.input__button:hover 
-  transition: all .3s
-  background-color: $hover
-
-
-.result 
+.result
   font-weight: bold
   font-size: 1.5em
   color: $secondary
@@ -116,14 +117,21 @@ abbr
   padding-top: 16px
   border-top: 3px solid $hover
 
-@media (max-width: 660px) 
+.class
+  color: $primary
+  font-weight: 600
+  font-size: 1.5em
+  margin-top: 16px
+  text-align: center
+
+@media (max-width: 660px)
   body
     gap: 0
-  
+
   .container__input
     align-self: center
 
-@media (max-width: 843px) 
+@media (max-width: 843px)
 
   .img-imc
     display: none
