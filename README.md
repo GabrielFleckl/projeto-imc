@@ -21,7 +21,7 @@
 
 Aqui você pode conferir o layout do projeto. <br>
 
-[👉 Link para visualizar a pagina completa](https://gabrielfleckl.github.io/projeto-imc/public/index.html)
+[👉 Link para visualizar a pagina completa](https://gabrielfleckl.github.io/projeto-imc/)
 
 
 <br>
